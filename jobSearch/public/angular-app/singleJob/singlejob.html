@@ -1,0 +1,34 @@
+<div class="alert alert-danger" ng-if="vm.err" >
+    {{vm.error}}
+</div>
+
+<div class="single-outer">
+
+<div class="card">
+    <div class="card-header heading">
+        <h2> Job Title: &nbsp; {{vm.job.title }} </h2>
+    </div>
+<div class="card-body">
+    <div class="card" >
+        <ul  class="list-group list-group-flush">
+         <li class="list-group-item"><span class="badge bg-primary">Description  </span> {{vm.job.description}}</li>
+         <li class="list-group-item"><span class="badge bg-primary">Salary  </span> {{vm.job.salary| currency}}</li>
+         <li class="list-group-item"><span class="badge bg-primary">Date Posted  </span> {{vm.job.postDate | date: "short" }}</li>
+         <li ng-show="vm.job.experience" class="list-group-item"><span class="badge bg-primary">Experience  </span> {{vm.job.experience}} Years</li> <span></span>
+         <li ng-show="vm.job.location" class="list-group-item"><span class="badge bg-primary">Location (Longitude)  </span> {{vm.job.location["coordinates"][0]}}</li> <span></span>
+         <li ng-show="vm.job.location" class="list-group-item"><span class="badge bg-primary">Location (Latitude)  </span> {{vm.job.location["coordinates"][1]}} </li> <span></span>
+        
+        </ul>
+      </div><br/><br/>
+      <div >
+      </div>
+      <div class="card-footer">
+
+        <span class="btn btn-success "><a ng-href="#!/jobopenings/{{vm.job._id}}/update">Update Job</a></span> &nbsp; &nbsp;&nbsp;&nbsp;
+
+      </div>
+ 
+</div>
+ </div>
+
+</div>

@@ -1,0 +1,21 @@
+{
+  "name": "jobsearch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "damian",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.8.2",
+    "angular-route": "^1.8.2",
+    "bootstrap": "^5.0.2",
+    "express": "^4.17.1",
+    "jquery": "^3.6.0",
+    "mongoose": "^5.13.0",
+    "path": "^0.12.7"
+  }
+}
